@@ -1,4 +1,4 @@
-import { BrowserRouter, Routes, Route } from 'react-router-dom'
+import { HashRouter, Routes, Route } from 'react-router-dom'
 import Layout from './components/Layout'
 import MainPage from './pages/MainPage'
 import BoilerPage from './pages/boiler/BoilerPage'
@@ -12,7 +12,7 @@ import HoodPage from './pages/HoodPage'
 
 function App() {
   return (
-    <BrowserRouter>
+    <HashRouter>
       <Routes>
         <Route path="/" element={<Layout />}>
           <Route index element={<MainPage />} />
@@ -24,10 +24,9 @@ function App() {
           <Route path="gas-water" element={<GasWaterPage />} />
           <Route path="dryer" element={<DryerPage />} />
           <Route path="hood" element={<HoodPage />} />
-
         </Route>
       </Routes>
-    </BrowserRouter>
+    </HashRouter>
   )
 }
 
