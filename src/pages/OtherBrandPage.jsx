@@ -38,7 +38,7 @@ function OtherBrandPage() {
       </div>
 
       {/* ━━━━ 린나이 ━━━━ */}
-      {show(['린나이','RBR-S3201D','RBR-41JW','RBR-51JW','RBR-42D','RBR-3DW','RBR-201','RBR-411','RBR-307CD','RBR-401','RBR-306D','RBR-501','RBR-A30CD','ST-WELL','560*430','560*460','560*480','430인착시','480인착시']) && (
+      {show(['린나이','RBR-S3201D','RBR-41JW','RBR-51JW','RBR-42D','RBR-3DW','RBR-201','RBR-411','RBR-307CD','RBR-401','RBR-306D','RBR-501','RBR-A30CD','ST-WELL','560*430','560*460','560*480','430안착시','480안착시']) && (
       <section className="ob-section">
         <div className="ob-section-header">
           <div className="ob-section-icon">🍳</div>
@@ -54,7 +54,7 @@ function OtherBrandPage() {
             </thead>
             <tbody>
               <tr><td>RBR-S3201D</td><td>3구</td><td>590*45.5</td><td className="hl">560*430</td><td>560*430</td><td></td></tr>
-              <tr><td>RBR-41JW, 41JB</td><td>3구</td><td></td><td className="hl">560*460</td><td>560*480</td><td>430인착시 쫄대/ 480인착시 타공</td></tr>
+              <tr><td>RBR-41JW, 41JB</td><td>3구</td><td></td><td className="hl">560*460</td><td>560*480</td><td>430안착시 쫄대/ 480안착시 타공</td></tr>
               <tr><td>RBR-51JW, 52J</td><td>3구</td><td></td><td className="hl">560*460</td><td>560*480</td><td></td></tr>
               <tr><td>RBR-42D, RBR-45D</td><td>3구</td><td></td><td className="hl">560*460</td><td></td><td>거치대+430사이즈/타공시 480사이즈</td></tr>
               <tr><td>RBR-3DW, 3DB</td><td>3구</td><td></td><td className="hl">560*460</td><td></td><td></td></tr>
@@ -72,12 +72,12 @@ function OtherBrandPage() {
       </section>
       )}
 
-      {/* ━━━━ 히츠 ━━━━ */}
-      {show(['히츠','HOR-5500P','GC-3604EDS','HGR-4051AC','HGR-30425','GC-3603SD','GC-3606EDSH','HGR-4100G','타공필요','검암','아니킨빌','생선그릴']) && (
+      {/* ━━━━ 하츠 ━━━━ */}
+      {show(['하츠','HOR-5500P','GC-3604EDS','HGR-4051AC','HGR-30425','GC-3603SD','GC-3606EDSH','HGR-4100G','타공필요','검암','아니킨빌','생선그릴']) && (
       <section className="ob-section">
         <div className="ob-section-header">
           <div className="ob-section-icon">🍳</div>
-          <div className="ob-section-title">히츠</div>
+          <div className="ob-section-title">하츠</div>
         </div>
         <div className="ob-table-wrap">
           <table className="ob-table">
@@ -92,7 +92,7 @@ function OtherBrandPage() {
               <tr><td>GC-3604EDS</td><td>3구</td><td></td><td className="red">타공필요</td><td>560*430</td><td></td></tr>
               <tr><td>HGR-4051AC</td><td>4구</td><td></td><td className="hl">560*480</td><td>560*480</td><td></td></tr>
               <tr><td>HGR-30425</td><td>3구</td><td>550*410</td><td></td><td></td><td></td></tr>
-              <tr><td>GC-3603SD</td><td>3구</td><td></td><td className="red">560*410 타공필요</td><td>560*430</td><td>검암 아니킨빌</td></tr>
+              <tr><td>GC-3603SD</td><td>3구</td><td></td><td className="red">560*410 타공필요</td><td>560*430</td><td>검암 아느칸빌</td></tr>
               <tr><td>GC-3606EDSH</td><td>3구</td><td></td><td className="hl">560*430</td><td></td><td></td></tr>
               <tr><td>HGR-4100G</td><td>4구</td><td>생선그릴레인지</td><td className="hl">560*480</td><td></td><td></td></tr>
             </tbody>
@@ -120,9 +120,9 @@ function OtherBrandPage() {
               <tr><td>HK632AAN</td><td>3구</td><td></td><td className="hl">560*480</td><td></td><td></td></tr>
               <tr><td>HK632A HK742A</td><td>3구</td><td></td><td className="hl">560*480</td><td></td><td></td></tr>
               <tr><td>TG-B650SN</td><td>4구</td><td></td><td className="hl">560*480</td><td></td><td>왕길동 대림아파트</td></tr>
-              <tr><td>TG-B650S</td><td>4구</td><td></td><td className="hl">560*480</td><td></td><td>청라 동문코어모닝힐 분리형오븐</td></tr>
-              <tr><td>TG-B734GN</td><td>4구</td><td></td><td className="hl">560*480 / 640*480</td><td>560*480</td><td>680*520 보조거치대지참(10만) / 송도자이하버뷰1단지-560*480 2단지 640*480</td></tr>
-              <tr><td>TG-B612SN</td><td>4구</td><td></td><td className="hl">560*480</td><td></td><td>상판 들어내야 알 수 있음</td></tr>
+              <tr><td>TG-B650S</td><td>4구</td><td></td><td className="hl">560*480</td><td></td><td>청라 동문굿모닝힐 분리형오븐</td></tr>
+              <tr><td>TG-B734GN</td><td>4구</td><td></td><td className="hl">560*480 / 640*480</td><td>560*480</td><td>680*520 보조거치대지참(10만) / 송도자이하버뷰1단지-560*480 2단지 640*480(보조거치대 필요)</td></tr>
+              <tr><td>TG-B612SN</td><td>4구</td><td></td><td className="hl">560*480</td><td></td><td>송도자이하버뷰1,2단지 모두 거치대지참 (상판 들어내야 알 수 있음)</td></tr>
               <tr><td>G-B152S(오브레인지)</td><td>4구</td><td></td><td className="hl">560*480</td><td></td><td>용인수지 성복자이1차 680*520 보조거치대 / 성복자이2차 560*480 (지참하기)</td></tr>
               <tr><td>HBH6341CN / HBH6432BN</td><td>3구</td><td>LG DIOS</td><td className="hl">560*480</td><td></td><td></td></tr>
               <tr><td className="highlight-row">TG-B740GN</td><td>4구</td><td>LG DIOS</td><td className="red">640*480</td><td>보조거치대+480사이즈</td><td>서울 서초구 명달로109 도무스빌 / 연수구 송도 웰카운티 / 한강밤섬자이 / 일산위시티자이 / 위시티일산자이2단지-인조대리석 상판 (추가타공가능)</td></tr>
@@ -161,8 +161,8 @@ function OtherBrandPage() {
               <tr><td className="highlight-row">SBO-3021N</td><td></td><td></td><td className="hl">560*480</td><td></td><td></td></tr>
               <tr><td className="highlight-row">SBO-S5101</td><td></td><td></td><td className="hl">560*480</td><td>오브레인지</td><td></td></tr>
               <tr><td>HBO-ME601</td><td>4구</td><td></td><td className="hl">560*480</td><td></td><td></td></tr>
-              <tr><td>SBO-6000N</td><td>4구</td><td></td><td className="hl">560*480</td><td></td><td>청라SK퓨</td></tr>
-              <tr><td>HBGR-401SN</td><td>4구</td><td></td><td className="hl">560*480</td><td></td><td>덕양구 래미안퓨레스트</td></tr>
+              <tr><td>SBO-6000N</td><td>4구</td><td></td><td className="hl">560*480</td><td></td><td>청라SK뷰</td></tr>
+              <tr><td>HBGR-401SN</td><td>4구</td><td></td><td className="hl">560*480</td><td></td><td>덕양구 래미안휴레스트</td></tr>
               <tr><td>SBO-M6001</td><td>4구</td><td></td><td className="hl">560*480</td><td></td><td></td></tr>
               <tr><td>SBR-D200N</td><td>2구</td><td>기존린나이</td><td>285*480</td><td></td><td></td></tr>
               <tr><td>SBR-D400</td><td>4구</td><td></td><td className="hl">560*480</td><td>560*480</td><td>길은뉴타운</td></tr>
@@ -300,7 +300,7 @@ function OtherBrandPage() {
               <tr><td>CTB-B363HS</td><td>3구</td><td>타공필요</td><td className="hl">554*430</td><td></td><td></td></tr>
               <tr><td>CTB-6015</td><td>4구</td><td>타공필요</td><td></td><td></td><td></td></tr>
               <tr><td>CTB-6034</td><td>4구</td><td></td><td className="hl">560*480</td><td></td><td></td></tr>
-              <tr><td>CTB-6014</td><td>3구</td><td>타공필요</td><td className="hl">560*460</td><td>560*480</td><td>또는 보조거치대 사용하여 560*430도 가능/또는 45D가능하다고할 - 가로타공사이즈 안 맞으면 타공진행해야함</td></tr>
+              <tr><td>CTB-6014</td><td>3구</td><td>타공필요</td><td className="hl">560*460</td><td>560*480</td><td>또는 보조거치대 사용하여 560*430도 가능/또는 45D가능하다고함 - 가로타공사이즈 안 맞으면 타공진행해야함</td></tr>
               <tr><td>CTB-B360</td><td>3구</td><td>타공필요</td><td className="hl">554*430</td><td></td><td></td></tr>
               <tr><td>SG-B53A</td><td>3구</td><td></td><td className="hl">560*430</td><td></td><td></td></tr>
               <tr><td>CTB-IK361</td><td>3구</td><td>타공필요</td><td className="hl">554*430</td><td></td><td></td></tr>
@@ -310,12 +310,12 @@ function OtherBrandPage() {
       </section>
       )}
 
-      {/* ━━━━ 지엔스 ━━━━ */}
-      {show(['지엔스','ER15353RK','FE401XU1','타공필요','타공없음','560*480','560*430']) && (
+      {/* ━━━━ 지멘스 ━━━━ */}
+      {show(['지멘스','ER15353RK','FE401XU1','타공필요','타공없음','560*480','560*430']) && (
       <section className="ob-section">
         <div className="ob-section-header">
           <div className="ob-section-icon">🍳</div>
-          <div className="ob-section-title">지엔스</div>
+          <div className="ob-section-title">지멘스</div>
         </div>
         <div className="ob-table-wrap">
           <table className="ob-table">
@@ -354,8 +354,8 @@ function OtherBrandPage() {
               <tr><td>NGC-303ND</td><td>3구</td><td></td><td className="red">타공필요</td><td>560*430</td><td></td></tr>
               <tr><td>NGC-S201S</td><td>2구</td><td>290*480</td><td className="hl">265*440</td><td></td><td>세로로 긴 2구 빌트인</td></tr>
               <tr><td className="highlight-row">NGC-S313S</td><td>3구</td><td>550*440</td><td className="red">타공필요</td><td>560*430</td><td></td></tr>
-              <tr><td>NGC-E311S</td><td>3구</td><td>550*440</td><td className="red">공필요/기본거치대경우도있음</td><td>560*430</td><td></td></tr>
-              <tr><td className="highlight-row">NGC-GL301</td><td>3구</td><td></td><td className="hl">555*465 타공필</td><td>560*480</td><td></td></tr>
+              <tr><td>NGC-E311S</td><td>3구</td><td>550*440</td><td className="red">타공필요/기본거치대경우도있음</td><td>560*430</td><td></td></tr>
+              <tr><td className="highlight-row">NGC-GL301</td><td>3구</td><td></td><td className="hl">555*465 타공필요</td><td>560*480</td><td></td></tr>
             </tbody>
           </table>
         </div>
@@ -383,7 +383,7 @@ function OtherBrandPage() {
               <tr><td>KCT-TW75</td><td>4구</td><td></td><td className="hl">710*480</td><td>RBR-P4400</td><td>특대 거치대사용-560*480</td></tr>
               <tr><td>KGO-GB75</td><td>4구</td><td></td><td className="hl">710*480</td><td>RBR-P4400</td><td></td></tr>
               <tr><td>HCT-S360</td><td>3구</td><td>560*430</td><td></td><td></td><td>타공한적있음</td></tr>
-              <tr><td>KCT-T360</td><td>3구</td><td></td><td className="red">558*422 타공필</td><td></td><td></td></tr>
+              <tr><td>KCT-T360</td><td>3구</td><td></td><td className="red">558*422 타공필요</td><td></td><td></td></tr>
             </tbody>
           </table>
         </div>
@@ -410,7 +410,7 @@ function OtherBrandPage() {
               <tr><td>NGC-S330C</td><td>3구</td><td></td><td className="red">550*430 타공필요</td><td>560*430</td><td>상판에따라 560*480 가능</td></tr>
               <tr><td>NGC-303DC</td><td>3구</td><td>575*475</td><td className="red">타공필요</td><td>560*430</td><td></td></tr>
               <tr><td>NGC-8400</td><td>4구</td><td></td><td className="hl">560*480</td><td></td><td></td></tr>
-              <tr><td className="highlight-row">NGC-S313S</td><td>3구</td><td></td><td className="red">554*430 타공필</td><td></td><td></td></tr>
+              <tr><td className="highlight-row">NGC-S313S</td><td>3구</td><td></td><td className="red">554*430 타공필요</td><td></td><td></td></tr>
             </tbody>
           </table>
         </div>

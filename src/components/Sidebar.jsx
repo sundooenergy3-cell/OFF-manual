@@ -29,7 +29,7 @@ const menus = [
   {
     group: '업소용',
     items: [
-      // { path: '/commercial', icon: '🏪', label: '업소용' },
+      { path: '/commercial', icon: '🏪', label: '업소용' },
     ]
   },
 ]

@@ -60,7 +60,7 @@ function GasRangePage() {
               <div className="gr-check-list">
                 <div className="gr-check-item">
                   <span className="gr-check-num">1</span>
-                  <span className="gr-check-text">지역 (거리가 멀다면 확인 후 거리비용 추가 - 거리비용 안급X)</span>
+                  <span className="gr-check-text">지역 (거리가 멀다면 확인 후 거리비용 추가 - 거리비용 언급X)</span>
                 </div>
                 <div className="gr-check-item">
                   <span className="gr-check-num">2</span>

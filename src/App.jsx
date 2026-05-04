@@ -9,6 +9,7 @@ import ElecWaterPage from './pages/ElecWaterPage'
 import GasWaterPage from './pages/GasWaterPage'
 import DryerPage from './pages/DryerPage'
 import HoodPage from './pages/HoodPage'
+import CommercialPage from './pages/CommercialPage'
 
 function App() {
   return (
@@ -24,6 +25,7 @@ function App() {
           <Route path="gas-water" element={<GasWaterPage />} />
           <Route path="dryer" element={<DryerPage />} />
           <Route path="hood" element={<HoodPage />} />
+          <Route path="commercial" element={<CommercialPage />} />
         </Route>
       </Routes>
     </HashRouter>
