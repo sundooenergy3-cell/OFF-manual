@@ -173,7 +173,7 @@ function CommercialPage() {
                 <thead>
                   <tr>
                     <th>모델명</th><th>용량</th><th>탱크</th><th>규격</th>
-                    <th>소비전력</th><th>전원</th><th>이아졸 방지 탱크</th>
+                    <th>소비전력</th><th>전원</th><th>이물질 방지 탱크</th>
                     <th>중량(kg)</th><th>현금/카드가</th><th>호환가능모델</th>
                   </tr>
                 </thead>
@@ -181,14 +181,14 @@ function CommercialPage() {
                   <tr>
                     <td className="hl">ROR-30N (구 302E)</td><td>22L</td><td>30L</td>
                     <td>345x585x315</td><td>250W</td><td>AC220V/60Hz</td>
-                    <td>이아졸 방지 탱크 커버포함</td><td>15(포장 20)</td>
+                    <td>이물질 방지 탱크 커버포함</td><td>15(포장 20)</td>
                     <td className="hl">73만</td>
                     <td>227TE(N) 227E(N) 228G 428G</td>
                   </tr>
                   <tr>
                     <td className="hl">ROR-40N (구 402E)</td><td>31L</td><td>40L</td>
                     <td>345x690x315</td><td>250W</td><td>AC220V/60Hz</td>
-                    <td>이아졸 방지 탱크 커버포함</td><td>17(포장 22)</td>
+                    <td>이물질 방지 탱크 커버포함</td><td>17(포장 22)</td>
                     <td className="hl">83만</td>
                     <td>227TE(N) 327TE(N) 227E(N) 327E(N) 228G 328G 428G</td>
                   </tr>
