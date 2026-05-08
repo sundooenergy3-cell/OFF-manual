@@ -16,6 +16,7 @@ import SashPage from './pages/SashPage'
 import InstallCostPage from './pages/InstallCostPage'
 import ConstructionPage from './pages/ConstructionPage'
 import TradePage from './pages/TradePage'
+import ConsultPage from './pages/ConsultPage'
 
 function App() {
   return (
@@ -38,6 +39,7 @@ function App() {
           <Route path="install-cost" element={<InstallCostPage />} />
           <Route path="construction" element={<ConstructionPage />} />
           <Route path="trade" element={<TradePage />} />
+          <Route path="consult" element={<ConsultPage />} />
         </Route>
       </Routes>
     </HashRouter>

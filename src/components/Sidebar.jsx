@@ -3,6 +3,12 @@ import './Sidebar.css'
 
 const menus = [
   {
+    group: '상담 메뉴얼',
+    items: [
+      { path: '/consult', icon: '📞', label: '상담 메뉴얼' },
+    ]
+  },
+  {
     group: '일반 안내',
     items: [
       { path: '/install-cost', icon: '💰', label: '설치비용 안내' },
