@@ -1,8 +1,23 @@
 import { Outlet } from 'react-router-dom'
+import { useState, useEffect } from 'react'
 import Sidebar from './Sidebar'
 import './Layout.css'
 
 function Layout() {
+  const [showTop, setShowTop] = useState(false)
+
+  useEffect(() => {
+    const handleScroll = () => {
+      setShowTop(window.scrollY > 300)
+    }
+    window.addEventListener('scroll', handleScroll, { passive: true })
+    return () => window.removeEventListener('scroll', handleScroll)
+  }, [])
+
+  const scrollToTop = () => {
+    window.scrollTo({ top: 0, behavior: 'smooth' })
+  }
+
   return (
     <div className="layout-wrap">
       <header className="header">
@@ -18,6 +33,11 @@ function Layout() {
           <Outlet />
         </main>
       </div>
+      {showTop && (
+        <button className="top-btn" onClick={scrollToTop}>
+          Top
+        </button>
+      )}
     </div>
   )
 }

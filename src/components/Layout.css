@@ -73,3 +73,31 @@
   padding: 32px;
   min-width: 0;
 }
+
+/* ── TOP BUTTON ── */
+.top-btn {
+  position: fixed;
+  right: 28px;
+  bottom: 32px;
+  width: 44px;
+  height: 44px;
+  border-radius: 50%;
+  background: #3d5db4;
+  color: #ffffff;
+  border: none;
+  font-size: 14px;
+  font-weight: bold;
+  cursor: pointer;
+  box-shadow: 0 4px 12px rgba(26,52,96,0.3);
+  transition: all .2s;
+  z-index: 99;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.top-btn:hover {
+  background: #2563eb;
+  transform: translateY(-3px);
+  box-shadow: 0 6px 16px rgba(26,52,96,0.4);
+}

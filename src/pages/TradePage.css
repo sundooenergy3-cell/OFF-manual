@@ -1,0 +1,149 @@
+.tr-page { max-width: 100%; }
+
+.tr-page-hero {
+  background: #ffffff;
+  border: 1px solid var(--border);
+  border-radius: 12px;
+  padding: 28px 32px;
+  margin-bottom: 32px;
+  position: relative; overflow: hidden;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.06);
+}
+
+.tr-page-hero::before {
+  content: '';
+  position: absolute; right: -30px; top: -30px;
+  width: 220px; height: 220px;
+  background: radial-gradient(circle, rgba(217,119,6,0.06) 0%, transparent 70%);
+  pointer-events: none;
+}
+
+.tr-page-hero-label {
+  font-size: 10px; font-weight: 700;
+  color: var(--accent); letter-spacing: 2px;
+  text-transform: uppercase; margin-bottom: 8px;
+}
+
+.tr-page-hero-title {
+  font-size: 24px; font-weight: 900;
+  color: var(--text); letter-spacing: -0.5px;
+  margin-bottom: 6px;
+}
+
+.tr-page-hero-sub { font-size: 13px; color: var(--text2); }
+
+.tr-card-grid {
+  display: flex; flex-wrap: wrap;
+  gap: 16px; align-items: flex-start;
+}
+
+.tr-card {
+  background: #ffffff;
+  border: 1.5px solid #d0dff2;
+  border-radius: 12px; overflow: hidden;
+  flex: 1 1 340px; min-width: 0;
+  box-shadow: 0 2px 8px rgba(26,52,96,0.06);
+  animation: tr-fadeUp .3s ease;
+  display: flex; flex-direction: column;
+}
+
+.tr-card.full { flex: 1 1 100%; }
+
+@keyframes tr-fadeUp {
+  from { opacity:0; transform:translateY(6px); }
+  to   { opacity:1; transform:none; }
+}
+
+.tr-card-head {
+  padding: 13px 16px;
+  display: flex; align-items: center; gap: 10px;
+  color: #ffffff; flex-shrink: 0;
+}
+
+.tr-card-head-icon { font-size: 18px; flex-shrink: 0; }
+.tr-card-head-title { font-weight: 700; font-size: 14px; }
+
+.tr-ch-blue   { background: linear-gradient(135deg, #1e3a8a 0%, #2563eb 100%); }
+.tr-ch-green  { background: linear-gradient(135deg, #14532d 0%, #16a34a 100%); }
+.tr-ch-amber  { background: linear-gradient(135deg, #78350f 0%, #b45309 100%); }
+.tr-ch-navy   { background: linear-gradient(135deg, #0f2044 0%, #1a3460 100%); }
+.tr-ch-teal   { background: linear-gradient(135deg, #134e4a 0%, #0f766e 100%); }
+.tr-ch-purple { background: linear-gradient(135deg, #4c1d95 0%, #7c3aed 100%); }
+
+.tr-card-body { padding: 16px; flex: 1; }
+
+.tr-detail-list { list-style: none; }
+
+.tr-detail-list li {
+  padding: 8px 0;
+  border-bottom: 1px solid #eef2f9;
+  font-size: 13.5px; line-height: 1.7;
+  color: var(--text2);
+  display: flex; gap: 9px; align-items: flex-start;
+}
+
+.tr-detail-list li:last-child { border-bottom: none; }
+
+.tr-detail-list li::before {
+  content: '▸';
+  color: #3b6bbf; font-size: 12px;
+  margin-top: 4px; flex-shrink: 0;
+}
+
+.tr-table-wrap {
+  width: 100%; overflow-x: auto;
+  border-radius: 9px;
+}
+
+.tr-data-table {
+  width: 100%; border-collapse: separate;
+  border-spacing: 0; font-size: 13px;
+  border-radius: 9px; overflow: hidden;
+  border: 1.5px solid #c7d8f0;
+  min-width: 300px;
+}
+
+.tr-data-table th {
+  background: #0f2044;
+  color: #ffffff; padding: 10px 13px;
+  text-align: center; font-weight: 700;
+  font-size: 12px;
+  border-right: 1px solid rgba(255,255,255,0.12);
+  white-space: nowrap;
+}
+
+.tr-data-table th:last-child { border-right: none; }
+
+.tr-data-table td {
+  padding: 9px 13px; text-align: center;
+  border-bottom: 1px solid #dde8f5;
+  border-right: 1px solid #dde8f5;
+  color: var(--text2); vertical-align: middle;
+}
+
+.tr-data-table td:first-child { text-align: left; font-weight: 600; color: #1a3460; }
+.tr-data-table td:last-child { border-right: none; }
+.tr-data-table tr:last-child td { border-bottom: none; }
+.tr-data-table tr:nth-child(even) td { background: #f5f9ff; }
+.tr-data-table tr:hover td { background: #eaf1fb; }
+.tr-data-table .hl { color: #1e40af; font-weight: 700; }
+.tr-data-table .hl-green { color: #15803d; font-weight: 700; }
+.tr-data-table .red { color: #dc2626; font-weight: 700; }
+
+.tr-link {
+  display: inline-block;
+  padding: 10px 18px;
+  background: #eff6ff;
+  border: 1.5px solid #bfdbfe;
+  border-radius: 8px;
+  color: #1e40af;
+  font-size: 13.5px; font-weight: 700;
+  text-decoration: none;
+  transition: all .15s;
+}
+
+.tr-link:hover {
+  background: #1e40af;
+  color: #ffffff;
+  border-color: #1e40af;
+}

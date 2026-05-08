@@ -1,12 +1,21 @@
-import { useState } from 'react'
 import './CommercialPage.css'
 
-function CommercialPage() {
-  const [search, setSearch] = useState('')
+const tabs = [
+  { id: 'cm-fryer', label: '🍟 튀김기' },
+  { id: 'cm-purifier', label: '🔧 정제기' },
+  { id: 'cm-rice', label: '🍚 취반기' },
+  { id: 'cm-dishwasher', label: '🍽️ 식기세척기' },
+  { id: 'cm-pot', label: '🍲 국솥' },
+  { id: 'cm-grill', label: '🔥 그릴' },
+  { id: 'cm-yakiniku', label: '🥩 야끼바' },
+  { id: 'cm-range1', label: '🍳 1구레인지' },
+  { id: 'cm-range2', label: '🍳 2구/4구레인지' },
+]
 
-  const show = (keywords) => {
-    if (!search) return true
-    return keywords.some(k => k.toLowerCase().includes(search.toLowerCase()))
+function CommercialPage() {
+  const scrollTo = (id) => {
+    const el = document.getElementById(id)
+    if (el) el.scrollIntoView({ behavior: 'smooth', block: 'start' })
   }
 
   return (
@@ -23,34 +32,30 @@ function CommercialPage() {
         <div>업소용 제품은 인천지사단가표, 매입가, 인터넷최저가 금액 비교하여 안내 (변동가능)</div>
       </div>
 
-      {/* 검색 */}
-      <div className="cm-search-bar">
-        <span className="cm-search-icon">🔍</span>
-        <input
-          type="text"
-          className="cm-search-input"
-          placeholder="모델명, 용량, 규격 검색..."
-          value={search}
-          onChange={e => setSearch(e.target.value)}
-        />
-        {search && (
-          <button className="cm-search-clear" onClick={() => setSearch('')}>✕</button>
-        )}
+      {/* 서브탭 */}
+      <div className="cm-sub-tabs">
+        {tabs.map(tab => (
+          <button
+            key={tab.id}
+            className="cm-sub-tab"
+            onClick={() => scrollTo(tab.id)}
+          >
+            {tab.label}
+          </button>
+        ))}
       </div>
 
       {/* ━━━━ 튀김기 ━━━━ */}
-      {show(['튀김기','RFA-M20G','RFA-M30G','RFA-M40G','RFA-227EN','RFA-327EN','RFA-M20E','RFA-M30E','가스식','전기식','22L','31L','44L','29L','30L','배유통별매','차단기']) && (
-      <section className="cm-section">
+      <section className="cm-section" id="cm-fryer">
         <div className="cm-section-header">
           <div className="cm-section-icon">🍟</div>
           <div>
             <div className="cm-section-title">튀김기</div>
-            <div className="cm-section-sub">*린나이 제품은 전부 지압 / 상담 : 가스종류 / 기기교체(설치O) or 신규(설치X) / 화물택배 가능</div>            
+            <div className="cm-section-sub">*린나이 제품은 전부 지압 / 상담 : 가스종류 / 기기교체(설치O) or 신규(설치X) / 화물택배 가능</div>
           </div>
         </div>
 
         {/* 가스식 */}
-        {show(['튀김기','가스식','RFA-M20G','RFA-M30G','RFA-M40G','22L','31L','44L','450*600','600*600','900*600']) && (
         <div className="cm-card full" style={{marginBottom:'16px'}}>
           <div className="cm-card-head cm-ch-amber">
             <span className="cm-card-head-icon">🔥</span>
@@ -100,10 +105,8 @@ function CommercialPage() {
             </div>
           </div>
         </div>
-        )}
 
         {/* 전기식 */}
-        {show(['튀김기','전기식','RFA-227EN','RFA-327EN','RFA-M20E','RFA-M30E','배유통별매','차단기','7kW','9kW']) && (
         <div className="cm-card full">
           <div className="cm-card-head cm-ch-indigo">
             <span className="cm-card-head-icon">⚡</span>
@@ -148,13 +151,10 @@ function CommercialPage() {
             </div>
           </div>
         </div>
-        )}
       </section>
-      )}
 
       {/* ━━━━ 정제기 ━━━━ */}
-      {show(['정제기','ROR-30N','ROR-40N','302E','402E','22L','30L','31L','40L','250W','이아졸','227TE','327TE']) && (
-      <section className="cm-section">
+      <section className="cm-section" id="cm-purifier">
         <div className="cm-section-header">
           <div className="cm-section-icon">🔧</div>
           <div>
@@ -198,11 +198,9 @@ function CommercialPage() {
           </div>
         </div>
       </section>
-      )}
 
       {/* ━━━━ 취반기 ━━━━ */}
-      {show(['취반기','RR-55G','RRA-101','RRA-151','소형','2단','3단','20-55인분','100인분','150인분','526','700','납품','스테인리스']) && (
-      <section className="cm-section">
+      <section className="cm-section" id="cm-rice">
         <div className="cm-section-header">
           <div className="cm-section-icon">🍚</div>
           <div>
@@ -253,11 +251,9 @@ function CommercialPage() {
           </div>
         </div>
       </section>
-      )}
 
       {/* ━━━━ 식기세척기 ━━━━ */}
-      {show(['식기세척기','DRW-600G','DRW-600EN','DRW-610E','650X650','4코스','도매가','나우','세제','린스','RWW-12PD','RWW-12DR']) && (
-      <section className="cm-section">
+      <section className="cm-section" id="cm-dishwasher">
         <div className="cm-section-header">
           <div className="cm-section-icon">🍽️</div>
           <div>
@@ -308,11 +304,9 @@ function CommercialPage() {
           </div>
         </div>
       </section>
-      )}
 
       {/* ━━━━ 국솥 ━━━━ */}
-      {show(['국솥','RSKN','RSK','스테인리스','주물','알루미늄','200인분','400인분','500인분','150인분','300인분','90L','150L','180L','55L','110L','인천가스','설비업체']) && (
-      <section className="cm-section">
+      <section className="cm-section" id="cm-pot">
         <div className="cm-section-header">
           <div className="cm-section-icon">🍲</div>
           <div>
@@ -335,7 +329,7 @@ function CommercialPage() {
                   </tr>
                 </thead>
                 <tbody>
-                  <tr><td rowSpan={3}>통 스테인리스</td><td className="hl">RSKN-201T</td><td>200인분</td><td>90L</td><td>1,392X1,000X930</td><td>34.9(2.5)</td><td>34.9(30,000)</td><td>136</td><td className="hl">365만</td><td rowSpan={12}>불가</td><td rowSpan={12}>불가</td><td rowSpan={5}>!! 불가!! 인천가스 설비업체 소개</td></tr>
+                  <tr><td rowSpan={3}>통 스테인리스</td><td className="hl">RSKN-201T</td><td>200인분</td><td>90L</td><td>1,392X1,000X930</td><td>34.9(2.5)</td><td>34.9(30,000)</td><td>136</td><td className="hl">365만</td><td rowSpan={12}>불가</td><td rowSpan={12}>불가</td><td rowSpan={5}>!! 불가!!<br/>인천가스 설비업체 소개</td></tr>
                   <tr><td className="hl">RSKN-401T</td><td>400인분</td><td>150L</td><td>1,495X1,100X930</td><td>43.0(3.1)</td><td>43.0(37,000)</td><td>162</td><td className="hl">385만</td></tr>
                   <tr><td className="hl">RSKN-501T</td><td>500인분</td><td>180L</td><td>1,575X1,200X930</td><td>46.5(3.3)</td><td>46.5(40,000)</td><td>169</td><td className="hl">405만</td></tr>
                   <tr><td rowSpan={3}>스테인리스</td><td className="hl">RSKN-201S</td><td>200인분</td><td>90L</td><td>1,392X1,000X930</td><td>34.9(2.5)</td><td>34.9(30,000)</td><td>118</td><td className="hl">315만</td></tr>
@@ -352,11 +346,9 @@ function CommercialPage() {
           </div>
         </div>
       </section>
-      )}
 
       {/* ━━━━ 그릴 ━━━━ */}
-      {show(['그릴','RSB-922N','RSB-923N','2버너','3버너','515X375','790X400','54만','66만']) && (
-      <section className="cm-section">
+      <section className="cm-section" id="cm-grill">
         <div className="cm-section-header">
           <div className="cm-section-icon">🔥</div>
           <div>
@@ -396,11 +388,9 @@ function CommercialPage() {
           </div>
         </div>
       </section>
-      )}
 
       {/* ━━━━ 야끼바 ━━━━ */}
-      {show(['야끼바','RG-440F','RG-640F','RSB-923N','570*630','770*630','790*400','9.5','14.0','7.1','66(설치포함)']) && (
-      <section className="cm-section">
+      <section className="cm-section" id="cm-yakiniku">
         <div className="cm-section-header">
           <div className="cm-section-icon">🥩</div>
           <div>
@@ -444,11 +434,9 @@ function CommercialPage() {
           </div>
         </div>
       </section>
-      )}
 
       {/* ━━━━ 1구 레인지 ━━━━ */}
-      {show(['1구레인지','1구 레인지','HI-170P','324*327','3.8','5.4','63,000']) && (
-      <section className="cm-section">
+      <section className="cm-section" id="cm-range1">
         <div className="cm-section-header">
           <div className="cm-section-icon">🍳</div>
           <div>
@@ -483,11 +471,9 @@ function CommercialPage() {
           </div>
         </div>
       </section>
-      )}
 
       {/* ━━━━ 2구/4구 레인지 ━━━━ */}
-      {show(['2구','4구','레인지','RSB-260S','RSB-490S','600*400','865*455','11.86','16.9']) && (
-      <section className="cm-section">
+      <section className="cm-section" id="cm-range2">
         <div className="cm-section-header">
           <div className="cm-section-icon">🍳</div>
           <div>
@@ -525,7 +511,6 @@ function CommercialPage() {
           </div>
         </div>
       </section>
-      )}
 
     </div>
   )

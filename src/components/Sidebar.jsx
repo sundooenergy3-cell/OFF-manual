@@ -3,10 +3,20 @@ import './Sidebar.css'
 
 const menus = [
   {
+    group: '일반 안내',
+    items: [
+      { path: '/install-cost', icon: '💰', label: '설치비용 안내' },
+      { path: '/construction', icon: '🏗️', label: '시공 전 주의사항' },
+      { path: '/trade', icon: '🏢', label: '판매구매 (거래처)' },
+    ]
+  },
+  {
     group: '난방 / 온수',
     items: [
       { path: '/boiler', icon: '🔥', label: '보일러' },
-      { path: '/install-info', icon: '📋', label: '설치정보 및 기타사항' },
+      { path: '/distributor', icon: '🔩', label: '분배기' },
+      { path: '/each-room', icon: '🏠', label: '각방' },
+      { path: '/install-info', icon: '📋', label: '설치정보' },
       { path: '/elec-water', icon: '⚡', label: '전기온수기' },
       { path: '/gas-water', icon: '💧', label: '가스온수기' },
     ]
@@ -15,7 +25,7 @@ const menus = [
     group: '주방',
     items: [
       { path: '/gas-range', icon: '🍳', label: '가스레인지' },
-      { path: '/other-brand', icon: '🔄', label: '타사 제품 정보' },
+      { path: '/other-brand', icon: '🔄', label: '타사 제품' },
       { path: '/hood', icon: '💨', label: '후드' },
     ]
   },
@@ -23,7 +33,7 @@ const menus = [
     group: '생활가전',
     items: [
       { path: '/dryer', icon: '👕', label: '건조기' },
-      // { path: '/sash', icon: '🪟', label: '샤시' },
+      { path: '/sash', icon: '🪟', label: '샤시' },
     ]
   },
   {

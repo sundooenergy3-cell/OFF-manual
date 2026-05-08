@@ -176,3 +176,25 @@
 .cm-data-table tr:hover td { background: #eaf1fb; transition: background .12s; }
 .cm-data-table .hl { color: #1a3460; font-weight: 700; }
 .cm-data-table .red { color: #dc2626; font-weight: 600; }
+
+/* ── SUB TABS ── */
+.cm-sub-tabs {
+  display: flex; gap: 8px;
+  margin-bottom: 28px; flex-wrap: wrap;
+}
+
+.cm-sub-tab {
+  padding: 8px 16px; border-radius: 8px;
+  border: 1.5px solid #d0dff2;
+  background: #ffffff; color: #1a3460;
+  font-family: inherit; font-size: 13px;
+  font-weight: 700; cursor: pointer;
+  transition: all .15s;
+  box-shadow: 0 1px 3px rgba(26,52,96,0.06);
+}
+
+.cm-sub-tab:hover {
+  background: #1e3a8a; border-color: #1e3a8a;
+  color: #ffffff; transform: translateY(-1px);
+  box-shadow: 0 4px 12px rgba(30,58,138,0.2);
+}
