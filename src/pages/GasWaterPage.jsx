@@ -131,7 +131,7 @@ function GasWaterPage() {
                     <tr><td>14L</td><td className="hl">RW-14BF</td><td>24,500</td><td className="hl">50만</td><td className="hl">65만</td></tr>
                     <tr><td>18L</td><td className="hl">RW-18BF</td><td>32,500</td><td className="hl">52만</td><td className="hl">71만</td></tr>
                     <tr><td>24L</td><td className="hl">RW-24BF</td><td>43,400</td><td className="hl">57만</td><td className="hl">76만</td></tr>
-                    <tr><td>캐스케이드</td><td className="hl">RCS-50WF</td><td></td><td className="hl">50,000</td><td></td></tr>
+                    <tr><td>캐스케이드</td><td className="hl">RCS-50WF</td><td>50,000</td><td className="hl">-</td><td>-</td></tr>
                   </tbody>
                 </table>
               </div>
