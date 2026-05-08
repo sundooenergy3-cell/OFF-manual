@@ -7,6 +7,8 @@ import imgTagang2 from '../assets/tagang-sample2.png'
 import imgInduction1 from '../assets/induction1.png'
 import imgInduction2 from '../assets/induction2.png'
 import imgInduction3 from '../assets/induction3.png'
+import imgStandCaseElec from '../assets/stand-case-elec.png'
+import imgStandCaseGas from '../assets/stand-case-gas.png'
 
 function GasRangePage() {
   return (
@@ -475,7 +477,7 @@ function GasRangePage() {
                       <td>280*360*44.5</td><td>인덕션</td><td>세라믹글라스</td><td>1구</td><td></td>
                     </tr>
                     <tr>
-                      <td className="hl">RIH-200N</td><td>249*475</td>
+                      <td className="hl">RIH-200N</td><td>249 *475</td>
                       <td className="hl">212,000</td><td className="hl">300,000</td>
                       <td>300*510*56</td><td>인덕션</td><td>유로케라</td>
                       <td rowSpan={2}>2구</td><td>대/중</td>
@@ -550,10 +552,12 @@ function GasRangePage() {
           </div>
         </div>
         <div className="gr-card-grid">
+
+          {/* 560*430 */}
           <div className="gr-card full">
             <div className="gr-card-head gr-ch-slate">
               <span className="gr-card-head-icon">📦</span>
-              <div className="gr-card-head-title">스탠드 케이스 모델별 단가</div>
+              <div className="gr-card-head-title">560*430 스탠드 케이스</div>
             </div>
             <div className="gr-card-body">
               <div className="gr-table-wrap">
@@ -567,7 +571,8 @@ function GasRangePage() {
                   <tbody>
                     <tr>
                       <td className="hl">FS-L5500WH</td>
-                      <td rowSpan={3}>560*430</td><td rowSpan={3} className="hl">8만5천</td>
+                      <td rowSpan={3}>560*430</td>
+                      <td rowSpan={3} className="hl">8만5천</td>
                       <td>화이트</td><td>낮은</td><td>5cm</td>
                     </tr>
                     <tr>
@@ -578,32 +583,60 @@ function GasRangePage() {
                       <td className="hl">H5510SI</td>
                       <td>실버</td><td>높은</td><td>15cm</td>
                     </tr>
-                    <tr>
-                      <td className="hl">ES-L6001T(가스)</td>
-                      <td rowSpan={4}>560*480</td><td rowSpan={4} className="hl">10만</td>
-                      <td rowSpan={4}>실버</td><td>낮은</td><td>8cm</td>
-                    </tr>
-                    <tr>
-                      <td className="hl">ES-H6001T(가스)</td>
-                      <td>높은</td><td>15cm</td>
-                    </tr>
-                    <tr>
-                      <td className="hl">ES-L6002T(전기)</td>
-                      <td>낮은</td><td>8cm</td>
-                    </tr>
-                    <tr>
-                      <td className="hl">ES-H6002T(전기)</td>
-                      <td>높은</td><td>15cm</td>
-                    </tr>
                   </tbody>
                 </table>
               </div>
-              <div className="gr-notice info" style={{marginTop:'10px'}}>
+            </div>
+          </div>
+
+          {/* 560*480 전기 */}
+          <div className="gr-card full">
+            <div className="gr-card-head gr-ch-indigo">
+              <span className="gr-card-head-icon">⚡</span>
+              <div>
+                <div className="gr-card-head-title">ES-L6002T / ES-H6002T (전기)</div>
+                <div className="gr-card-head-sub">560*480 / 가격 : 10만</div>
+              </div>
+            </div>
+            <div className="gr-card-body">
+              <div className="gr-notice info" style={{marginBottom:'12px'}}>
                 <span className="gr-notice-icon">ℹ️</span>
-                <div className="gr-notice-body">ES-L6001T(가스), ES-H6001T(가스) — 모서리가 둥글음 / ES-L6002T(전기), ES-H6002T(전기) — 모서리가 각짐</div>
+                <div className="gr-notice-body">
+                  ES-L6002T(전기) — 8cm 낮은 / ES-H6002T(전기) — 15cm 높은<br />
+                  모서리가 <strong>각짐</strong> / 560*480 인덕션 가능
+                </div>
+              </div>
+              <div className="gr-stand-img-wrap">
+                <div className="gr-stand-img-label">적용가능 모델</div>
+                <img src={imgStandCaseElec} alt="전기 스탠드케이스 호환모델" className="gr-stand-img" />
               </div>
             </div>
           </div>
+
+          {/* 560*480 가스 */}
+          <div className="gr-card full">
+            <div className="gr-card-head gr-ch-amber">
+              <span className="gr-card-head-icon">🔥</span>
+              <div>
+                <div className="gr-card-head-title">ES-L6001T / ES-H6001T (가스)</div>
+                <div className="gr-card-head-sub">560*480 / 가격 : 10만</div>
+              </div>
+            </div>
+            <div className="gr-card-body">
+              <div className="gr-notice info" style={{marginBottom:'12px'}}>
+                <span className="gr-notice-icon">ℹ️</span>
+                <div className="gr-notice-body">
+                  ES-L6001T(가스) — 8cm 낮은 / ES-H6001T(가스) — 15cm 높은<br />
+                  모서리가 <strong>둥글음</strong>
+                </div>
+              </div>
+              <div className="gr-stand-img-wrap">
+                <div className="gr-stand-img-label">적용가능 모델</div>
+                <img src={imgStandCaseGas} alt="가스 스탠드케이스 호환모델" className="gr-stand-img" />
+              </div>
+            </div>
+          </div>
+
         </div>
       </section>
 

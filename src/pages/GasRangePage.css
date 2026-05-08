@@ -242,3 +242,24 @@
   text-align: center;
   line-height: 1.4;
 }
+
+/* ── STAND CASE IMAGE ── */
+.gr-stand-img-wrap {
+  background: #f7fafc;
+  border: 1px solid #dde8f5;
+  border-radius: 8px;
+  padding: 12px;
+}
+
+.gr-stand-img-label {
+  font-size: 12px; font-weight: 700;
+  color: #1a3460; margin-bottom: 8px;
+  text-align: center;
+}
+
+.gr-stand-img {
+  width: 100%;
+  max-height: 400px;
+  object-fit: contain;
+  display: block;
+}
