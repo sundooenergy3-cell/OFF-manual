@@ -131,9 +131,16 @@ function GasWaterPage() {
                     <tr><td>14L</td><td className="hl">RW-14BF</td><td>24,500</td><td className="hl">50만</td><td className="hl">65만</td></tr>
                     <tr><td>18L</td><td className="hl">RW-18BF</td><td>32,500</td><td className="hl">52만</td><td className="hl">71만</td></tr>
                     <tr><td>24L</td><td className="hl">RW-24BF</td><td>43,400</td><td className="hl">57만</td><td className="hl">76만</td></tr>
-                    <tr><td>캐스케이드</td><td className="hl">RCS-50WF</td><td>50,000</td><td className="hl">-</td><td>-</td></tr>
+                    <tr><td>캐스케이드</td><td className="hl">RCS-50WF</td><td>50,000</td><td className="hl">110만</td><td>140만</td></tr>
                   </tbody>
                 </table>
+              </div>
+              <div className="gw-notice info" style={{marginTop:'10px'}}>
+                <span className="gw-notice-icon">📋</span>
+                <div className="gw-notice-body">
+                  <b>케스케이드 안내</b>
+                  현장 사진, 수량 등 취합해서 사장님 전달(이관)
+                </div>
               </div>
             </div>
           </div>
