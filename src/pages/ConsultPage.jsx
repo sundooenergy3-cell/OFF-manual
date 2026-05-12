@@ -273,7 +273,7 @@ function ConsultPage() {
                     <span className="con-flow-badge con-flow-num">4</span>
                     <span className="con-flow-arr">→</span>
                     <span className="con-flow-badge con-flow-num">5</span>
-                  </div>
+                </div>
                 </div>
               </div>
             </div>
